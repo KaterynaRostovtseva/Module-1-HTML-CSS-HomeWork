@@ -1,0 +1,83 @@
+
+button {
+    margin-top: 15px;
+}
+fieldset {
+    padding-top: 10px;
+    width: 400px;
+}
+.col-25{
+    float: left;
+    width: 25%;
+    margin-top: 10px;
+}
+.col-75{
+    float: left;
+    width: 75%;
+    margin-top: 10px;
+}
+select {
+    width: 57%;
+}
+textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+}
+.h3 {
+    font-size: 16px;
+    font-weight: bold ;
+}
+
+/* контейнер */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin: 12px;
+    cursor: pointer;
+    user-select: none;
+  }
+  /* скрываем дефолтный флажок */
+  .container .check-highload {
+    position: absolute;
+    opacity: 0;
+  }
+  /* Создаем кастомный checkbox */
+  .highload2 {
+    position: absolute;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 5px;
+  }
+ /* При наведении указателя мыши перекрашиваем */
+.container:hover .check-highload ~ .highload2 {
+    border: 2px solid #40990c;
+  }
+  /* Когда отмечен, то красим в зеленый цвет */
+  .container .check-highload:checked ~ .highload2 {
+    background: linear-gradient(rgb(16, 238, 49), rgb(17, 102, 6));
+    border: 2px solid #40990c;
+  }
+  /* Создаем когда отмечено (не видно, когда не отмечено) */
+  .highload2:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  /* Показываем когда отмечен */
+  .container .check-highload:checked ~ .highload2:after {
+    display: block;
+  }
+  /* Стили индикатора */
+  .container .highload2:after {
+    left: 8px;
+    top: 1px;
+    width: 3px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 4px 4px 0;
+    transform: rotate(45deg);
+  }
