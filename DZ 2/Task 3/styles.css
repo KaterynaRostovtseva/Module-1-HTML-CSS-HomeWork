@@ -1,0 +1,20 @@
+h3:first-child {
+    color:pink
+}
+#qreycol {
+    color: grey
+}
+p:first-child {
+     color:red
+}
+
+[title] {
+     color:blue;
+}
+
+p:nth-last-of-type(2) {
+    color:green
+}
+.yellow {
+    color:yellow
+}
