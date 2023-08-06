@@ -1,0 +1,36 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+.menu {
+    width: 200px;
+    height: 800px;
+    background-color: grey;
+    margin-left: -170px;
+}
+.left{
+    float: left;
+}
+li {
+    color: white;
+    margin-bottom: 5px ;
+    padding: 20px;
+}
+.open-menu {
+    width: 30px;
+    background-color: grey;
+    padding-left: 20px;
+    float: right;
+}
+.menu:hover {
+    margin: 0px;
+}
+.menu:hover .open-menu{
+    visibility: hidden;
+}
+p {
+    color: white;
+    writing-mode: vertical-rl;
+    text-align: center;
+    height: 800px;
+}

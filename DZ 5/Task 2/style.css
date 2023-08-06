@@ -1,0 +1,38 @@
+.holder {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    border: 3px solid black;
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+}
+.item:nth-of-type(1) {
+    order: 1;
+    background-color: rgb(247, 117, 117);
+    width: 300px; 
+}
+.item:nth-of-type(5) { 
+    background-color: rgb(243, 243, 55);
+    order: 2;
+    width: 300px; 
+}
+.item:nth-of-type(3) {
+    order: 3;
+    background-color: rgb(144, 76, 211);
+    width: 200px; 
+}
+.item:nth-of-type(2) {
+    order: 4;
+    background-color: rgb(75, 75, 236);
+    width: 200px; 
+}
+.item:nth-of-type(4) {
+    order: 5;
+    background-color: rgb(48, 226, 48);
+    width: 200px; 
+}
+.item {
+    display: flex;
+    font-size: 60px;
+    justify-content: center;
+}

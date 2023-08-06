@@ -1,0 +1,25 @@
+.pink {
+width: 200px;
+height: 200px;
+background-color: pink;
+position: absolute;
+margin-top: 100px;
+margin-left: 200px;
+}
+.blue {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 300px;
+    z-index: 2;
+}
+.green {
+     width: 200px;
+    height: 200px;
+     background-color: green;
+     position: absolute;
+     margin-top:300px;
+     margin-left: 400px;
+ }

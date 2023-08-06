@@ -1,0 +1,45 @@
+.content {
+    margin-top: 500px;
+    margin-left: 20px;
+}
+.rectangle {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(13, 13, 222);
+    position: relative;
+    animation: blue-rectangle 7s ease-in-out infinite normal;
+}
+@keyframes blue-rectangle {
+    0% {
+        bottom: 0; left: 0;
+    }
+    15% {
+        background-color: rgb(41, 5, 113)
+    }
+    25% { 
+        bottom: 0; left: 400px;
+        background-color: rgb(5, 185, 50)
+    }
+    35% {
+        background-color: rgb(142, 202, 12)
+    }
+    50% {
+        bottom: 400px; left: 400px;
+        background-color: rgb(245, 241, 6)
+    }
+    65% {
+        background-color: rgb(236, 117, 5)
+    }
+    75% {
+        bottom: 400px; left: 0;
+        background-color: rgb(240, 12, 8);
+    }
+    85% {
+        background-color: rgb(164, 7, 130)
+    }
+    100% {
+        bottom: 0px; left: 0;
+        background-color: rgb(13, 13, 222); ;
+    }
+}  
+
